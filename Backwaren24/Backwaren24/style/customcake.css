@@ -1,0 +1,100 @@
+.content {
+	z-index: 1;
+	position: absolute;
+	font-family: Arial;
+	color: white;
+	left: 20%;
+	top: 30%;
+}
+
+.image {
+	z-index: 1;
+	position: absolute;
+}
+
+.cakeColored {
+	z-index: 1;
+	position: absolute;
+	left: 56.5%;
+	bottom: 37%;
+	visibility: hidden;
+}
+
+.cakeDetails {
+	z-index: 1;
+	position: absolute;
+	left: 56.5%;
+	bottom: 37%;
+	visibility: hidden;
+}
+
+.addToCart a {
+	position: absolute;
+	z-index: 2;
+	bottom: 9%;
+	left: 20%;
+	display: block;
+	text-align: center;
+	height: 75px;
+	width: 200px;
+	line-height: 40px;
+	background-color: tomato;
+	color: white;
+	text-decoration: none;
+}
+
+.addToCart a:hover {
+	background-color: red;
+}
+
+#cakeDefault {
+	right: 20%;
+	bottom: 20%;
+}
+
+#cakeText {
+	z-index: 3;
+	position: absolute;
+	left: 62%;
+	bottom: 52%;
+}
+
+#customText {
+	z-index: 1;
+	position: absolute;
+	width: 288%;
+}
+
+#extraText {
+	z-index: 1;
+	position: absolute;
+	width: 248%;
+}
+
+#sprinkles {
+	z-index: 2;
+}
+
+#strawberry {
+	z-index: 3;
+}
+
+#chocolate {
+	z-index: 3;
+}
+
+#decoration {
+	z-index: 3;
+}
+
+.title {
+	position absolute;
+	color: red;
+	font-size: large;
+}
+
+.extraInput {
+	color: red;
+	font-size: large;
+	position: absolute;
+}

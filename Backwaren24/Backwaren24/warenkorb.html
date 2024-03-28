@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/default.css" />
+    <link rel="stylesheet" type="text/css" href="style/shoppingcart.css" />
+    <script src="scripts/warenkorb.js" async> </script>
+    <script src="scripts/dropdown.js"></script>
+    <title>Backwaren 24</title>
+</head>
+<body>
+    <img src="image/header.png" class="header">
+    <a href="index.html">
+        <img src="image/home_button.png" class="buttons" id="home">
+    </a>
+    <a href="warenkorb.html">
+        <img src="image/warenkorb_button.png" class="buttons" id="warenkorb">
+    </a>
+    <img src="image/unserAngebot_button.png" class="buttons" id="angebot" onclick="toggleDropdownMenu();">
+    <a href="angebot.html"> <img src="image/angebot-dropdown_button.png" class="dropdown dropdown-angebot"> </a>
+    <a href="kuchen-personalisieren.html"> <img src="image/kuchen-personalisierbar-dropdown_button.png" class="dropdown dropdown-angebot" id="dropdown-kuchen-personalisieren"> </a>
+    <a href="angebot.html"> <img src="image/dropdown.png" class="dropdown"> </a>
+    </a>
+    <img src="image/box.png" id="boxBackground" ;>
+    <div id="box" class="container">
+        <div class="centered">
+            <table class="cart-items">
+                <tr>
+                    <th>Produkt</th>
+                    <th>Preis</th>
+                    <th>Menge</th>
+                    <th>Subtotal</th>
+                </tr>
+            </table>
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Total</td>
+                        <td class="cart-total-price"></td>
+                    </tr>
+                </table>
+                <a class='buy-button' onclick="buyCart()" href="warenkorb.html"> Kaufen </a>
+            </div>
+        </div>
+    </div>
+    <a class="foolinks" id="imprintFixed" href="impressum.html">Impressum</a>
+    <a class="foolinks" id="dataprotectionFixed" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+</body>
+</html>

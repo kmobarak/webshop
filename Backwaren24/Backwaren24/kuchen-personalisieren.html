@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/default.css" />
+    <link rel="stylesheet" type="text/css" href="style/textformat.css" />
+    <link rel="stylesheet" type="text/css" href="style/customcake.css" />
+    <script src="scripts/kuchen-personalisieren.js" async></script>
+    <script src="scripts/dropdown.js"></script>
+    <title>Backwaren 24</title>
+</head>
+<body>
+    <img src="image/header.png" class="header">
+    <a href="index.html">
+        <img src="image/home_button.png" class="buttons" id="home">
+    </a>
+    <a href="warenkorb.html">
+        <img src="image/warenkorb_button.png" class="buttons" id="warenkorb">
+    </a>
+    <img src="image/unserAngebot_button.png" class="buttons" id="angebot" onclick="toggleDropdownMenu();">
+    <a href="angebot.html"> <img src="image/angebot-dropdown_button.png" class="dropdown dropdown-angebot"> </a>
+    <a href="kuchen-personalisieren.html"> <img src="image/kuchen-personalisierbar-dropdown_button.png" class="dropdown dropdown-angebot" id="dropdown-kuchen-personalisieren"> </a>
+    <a href="angebot.html"> <img src="image/dropdown.png" class="dropdown"> </a>
+    <div id="box">
+        <img src="image/box.png" id="boxBackground">
+        <span id="cakeText" style="white-space:nowrap;"></span>
+        <img class="cakeDetails" id="strawberry" src="image/strawberry.png"></img>
+        <img class="cakeDetails" id="chocolate" src="image/chocolate.png"></img>
+        <img class="cakeDetails" id="decoration" src="image/decoration.png"></img>
+        <img class="cakeDetails" id="sprinkles" src="image/sprinkles.png"></img>
+        <img class="image" id="cakeDefault" src="image/cake_default.jpg"></img>
+        <img class="cakeColored" id="blueCake" src="image/cake_blue.png"></img>
+        <img class="cakeColored" id="brownCake" src="image/cake_brown.png"></img>
+        <img class="cakeColored" id="greenCake" src="image/cake_green.png"></img>
+        <img class="cakeColored" id="orangeCake" src="image/cake_orange.png"></img>
+        <img class="cakeColored" id="redCake" src="image/cake_red.png"></img>
+        <img class="cakeColored" id="violetCake" src="image/cake_violet.png"></img>
+        <img class="cakeColored" id="yellowCake" src="image/cake_yellow.png"></img>
+        <div class="content">
+            <a class="title"> Thema </a> <br> <br>
+            <input id="text" type="text" style="width:150%;" /> <br> <br>
+            <a class="title"> Grundfarbe </a> <br> <br>
+            <select name="Grundfarbe" id="colorSelect" style="width:152%" onclick="updateCurrentCakeColor()">
+                <option value="whiteCake">Standard: Weiß</option>
+                <option value="blueCake">Blau</option>
+                <option value="brownCake">Braun</option>
+                <option value="greenCake">Grün</option>
+                <option value="orangeCake">Orange</option>
+                <option value="redCake">Rot</option>
+                <option value="violetCake">Violett</option>
+                <option value="yellowCake">Gelb</option>
+            </select>
+            <br> <br>
+            <fieldset>
+                <legend class="title">Toppings</legend>
+                <div>
+                    <input type="checkbox" id="cbFruits" value="fruits" onload="updateFruitTopping();" onclick="updateFruitTopping();">
+                    <label>Früchte</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cbSprinkles" value="sprinkles" onload="updateSprinkleTopping();" onclick="updateSprinkleTopping();">
+                    <label>Streusel</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cbChocolate" value="chocolate" onload="updateChocolateTopping();" onclick="updateChocolateTopping();">
+                    <label>Schokolade</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cbDecoration" value="decoration" onload="updateDecorationTopping();" onclick="updateDecorationTopping();">
+                    <label>Spritzdekor</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cbExtra" value="extra" onload="updateExtraTopping();" onclick="updateExtraTopping();">
+                    <label>Sonderwünsche</label>
+                </div>
+            </fieldset>
+            <br> <br>
+            <a class="title"> Eigener Spruch </a>
+            <br> <br>
+            <input type="text" id="customText" cols="35" rows="4" maxlength="30" onchange="updateCakeText()"></input>
+            <div class="extraInput">
+                <br> <br>
+                <a class="title"> Sonderwünsche </a>
+                <br> <br>
+                <input type="text" id="extraText" />
+                <br> <br>
+            </div>
+        </div>
+        <div class="addToCart">
+            <a class="produkt-Hinzufügen" href="warenkorb.html">Zum Warenkorb hinzufügen</a>
+        </div>
+    </div>
+    <a class="foolinks" id="imprint" href="impressum.html">Impressum</a>
+    <a class="foolinks" id="dataprotection" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+</body>
+</html>

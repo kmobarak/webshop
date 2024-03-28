@@ -1,0 +1,24 @@
+.headline {
+	font-size: x-large;
+	color: red;
+}
+
+.subHeadline {
+	font-size: large;
+	color: red;
+}
+
+.note {
+	font-size: medium;
+	color: gray;
+}
+
+.text {
+	z-index: 1;
+	position: absolute;
+	font-family: Arial;
+	font-size: small;
+	color: white;
+	left: 20%;
+	top: 13%;
+}

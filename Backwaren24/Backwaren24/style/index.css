@@ -1,0 +1,8 @@
+#image {
+	z-index: 1;
+	position: absolute;
+	bottom: 15%;
+	left: 28%;
+	height: 40%;
+	width: 40%;
+}

@@ -1,0 +1,94 @@
+body {
+	background-image: url('../image/backwaren.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: auto;
+}
+
+.header {
+	z-index: 10;
+	position: fixed;
+	width: 69%;
+	top: 0;
+	left: 15.8%;
+}
+
+.buttons {
+	z-index: 11;
+	position: fixed;
+	scale: 110%;
+	top: 0.6%;
+}
+
+.dropdown {
+	z-index: 9;
+	position: fixed;
+	visibility: hidden;
+	scale: 112%;
+	top: 11.2%;
+	left: 53%;
+}
+
+.dropdown-angebot {
+	z-index: 11;
+	position: fixed;
+	scale: 110%;
+	left: 52.6%;
+	top: 11.2%;
+}
+
+#dropdown-kuchen-personalisieren {
+	z-index: 11;
+	position: fixed;
+	scale: 110%;
+	left: 52.6%;
+	top: 16.2%;
+}
+
+#box {
+	z-index: 1;
+	margin-top: -10%;
+}
+
+#boxBackground {
+	z-index: 1;
+	position: absolute;
+	left: 15.8%;
+	width: 69%;
+	height: 180.5%;
+}
+
+#home {
+	right: 46%;
+	height: 14.4%;
+}
+
+#angebot {
+	right: 32%;
+    height: 14.4%;
+}
+
+#warenkorb {
+	right: 24%;
+    height: 14.4%;
+}
+
+.foolinks {
+	z-index: 9;
+	position: absolute;
+    font-family: Arial;
+	color: white;
+	scale: 100%;
+	bottom: -61.3%;
+}
+
+#imprint {
+	left: 20%;
+	top: 148%;
+}
+
+#dataprotection {
+	left: 30%;
+	top:  148%;
+}

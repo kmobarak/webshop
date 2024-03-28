@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/default.css" />
+    <link rel="stylesheet" type="text/css" href="style/shoppingcart.css" />
+    <script src="scripts/angebot.js" async></script>
+    <script src="scripts/dropdown.js"></script>
+    <title>Backwaren 24</title>
+</head>
+<body>
+    <img src="image/header.png" class="header">
+    <a href="index.html">
+        <img src="image/home_button.png" class="buttons" id="home">
+    </a>
+    <a href="warenkorb.html">
+        <img src="image/warenkorb_button.png" class="buttons" id="warenkorb">
+    </a>
+    <img src="image/unserAngebot_button.png" class="buttons" id="angebot" onclick="toggleDropdownMenu();">
+    <a href="angebot.html"> <img src="image/angebot-dropdown_button.png" class="dropdown dropdown-angebot"> </a>
+    <a href="kuchen-personalisieren.html"> <img src="image/kuchen-personalisierbar-dropdown_button.png" class="dropdown dropdown-angebot" id="dropdown-kuchen-personalisieren">
+    </a>
+    <a href="angebot.html"> <img src="image/dropdown.png" class="dropdown"> </a>
+    <img src="image/box.png" id="boxBackground">
+    <div id="box" class="container">
+        <div class="centered">
+            <table class="cart-items">
+                <tr>
+                    <th>Produkt</th>
+                    <th>Preis</th>
+                    <th>Kaufen</th>
+                </tr>
+                <tr class="cart-row">
+                    <td class="cart-info">
+                        <img src="image/blaubeermuffin.jpeg" alt="Buttermilchmuffins" class="shop-item-image">
+                        <p class="shop-item-title">12 Buttermilch-muffins mit Blaubeeren</p>
+                    </td>
+                    <td class="cart-price">€14.99</td>
+                    <td class="cart-quantity">
+                        <button class="produkt-Hinzufügen" type="button">hinzufügen</button>
+                    </td>
+                </tr>
+                <tr class="cart-row">
+                    <td class="cart-info">
+                        <img src="image/schmandmuffinsmandarine.jpeg" alt="Schmandmuffins" class="shop-item-image">
+                        <p class="shop-item-title">12 Muffins mit Keksboden, Schmandfüllung und Mandarinen</p>
+                    </td>
+                    <td class="cart-price">€16.99</td>
+                    <td class="cart-quantity">
+                        <button class="produkt-Hinzufügen" type="button">hinzufügen</button>
+                    </td>
+                </tr>
+                <tr class="cart-row">
+                    <td class="cart-info">
+                        <img src="image/erdnusskaramellbrownies.jpeg" alt="Brownies" class="shop-item-image">
+                        <p class="shop-item-title">4 Schokoladige Brownies mit Karamellsauce und Erdnusstopping</p>
+                    </td>
+                    <td class="cart-price">€7.99</td>
+                    <td class="cart-quantity">
+                        <button class="produkt-Hinzufügen" type="button">hinzufügen</button>
+                    </td>
+                </tr>
+                <tr class="cart-row">
+                    <td class="cart-info">
+                        <img src="image/Bananenbrot.jpeg" alt="Bananenbrot" class="shop-item-image">
+                        <p class="shop-item-title">500g Bananenbrot mit Haferflocken, Datteln und Zartbitterschokolade</p>
+                    </td>
+                    <td class="cart-price">€12.99</td>
+                    <td class="cart-quantity">
+                        <button class="produkt-Hinzufügen" type="button">hinzufügen</button>
+                    </td>
+                </tr>
+                <tr class="cart-row">
+                    <td class="cart-info">
+                        <img src="image/sandkuchen.jpeg" alt="Sandkuchen" class="shop-item-image">
+                        <p class="shop-item-title">4 Stück Sandkuchen</p>
+                    </td>
+                    <td class="cart-price">€4.99</td>
+                    <td class="cart-quantity">
+                        <button class="produkt-Hinzufügen" type="button">hinzufügen</button>
+                    </td>
+                </tr>
+                <tr class="cart-row">
+                    <td class="cart-info">
+                        <img src="image/hefeschnecken.jpeg" alt="Hefeschnecken" class="shop-item-image">
+                        <p class="shop-item-title">2 Hefeschnecken mit Zimtfüllung</p>
+                    </td>
+                    <td class="cart-price">€3.99</td>
+                    <td class="cart-quantity">
+                        <button class="produkt-Hinzufügen" type="button">hinzufügen</button>
+                    </td>
+                </tr>
+                <tr class="cart-row">
+                    <td class="cart-info">
+                        <img src="image/käsekuchen.jpeg" alt="Käsekuchen" class="shop-item-image">
+                        <p class="shop-item-title">1 Stück Käsekuchen mit dunklen Streuseln und Kürbisfüllung</p>
+                    </td>
+                    <td class="cart-price">€1.49</td>
+                    <td class="cart-quantity">
+                        <button class="produkt-Hinzufügen" type="button">hinzufügen</button>
+                    </td>
+                </tr>
+            </table>
+            <div class="total-price">
+                <a id="shoppingCartButton" href="warenkorb.html">Zum Warenkorb</a>
+            </div>
+        </div>
+    </div>
+    <a class="foolinks" id="imprintFixed" href="impressum.html">Impressum</a>
+    <a class="foolinks" id="dataprotectionFixed" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+</body>
+</html>
